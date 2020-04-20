@@ -1,13 +1,14 @@
 {
-  "presets": [
-     "@babel/preset-env"
-  ],
-  "plugins": [
-     "@babel/plugin-transform-runtime",
-     "@babel/plugin-proposal-class-properties",
-     [
-        "@babel/plugin-transform-modules-commonjs", 
-        { "strictMode": false }
-     ]
-  ]
-}
+   "presets": [
+     ["env", {
+       "modules": false,
+       "targets": {
+         "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+       }
+     }],
+     "stage-2"
+   ],
+   "plugins": [
+      "transform-remove-strict-mode"
+   ]}
+ 

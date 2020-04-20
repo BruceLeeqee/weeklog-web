@@ -35,6 +35,7 @@
 <script>
 
 import mui from '../../assets/js/mui.min.js';
+// import '../../assets/js/mui.min.js';
 mui('.mui-scroll-wrapper').scroll({
     deceleration:0.0005
 })

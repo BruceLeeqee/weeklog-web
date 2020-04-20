@@ -10,7 +10,7 @@
 
 <script>
 import mui from '../../assets/js/mui.min.js';
-
+// import '../../assets/js/mui.min.js';
 export default {
     data(){
         return{//props:["num"]   //   num:parseInt('0') //不用此步骤
