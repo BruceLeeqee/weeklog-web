@@ -3,6 +3,7 @@
 FROM node as build-stage
 # 全局安装cnpm环境，然后安装相关依赖
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+RUN COPY package*.json .
 RUN cnpm install
 # 配置容器的app目录，然后拷贝本地根目录 到 容器工作目录，然后构建整个项目
 WORKDIR /app
