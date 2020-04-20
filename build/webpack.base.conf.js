@@ -40,6 +40,10 @@ module.exports = {
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
       //通过babble-loader将ES6编译压缩为ES5
       {
         test: /\.js$/,
